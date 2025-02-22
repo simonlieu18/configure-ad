@@ -21,10 +21,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Install Active Directory
+- Create a Domain Admin user within the domain
+- Join Client to your domain
+- Setup Remote Desktop for non-administrative users on Client-1
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -35,18 +35,31 @@ Launch 2 virtual machines, one working as a Domain Controller and DNS while the 
 </p>
 <br />
 
+![image](https://github.com/user-attachments/assets/a3ffed1b-f6c7-4e7a-ad04-3fd485c89127)
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Install Active Directory Domain Services on the virtual machine that'll be used as a Domain Controller.
 </p>
 <br />
 
+![image](https://github.com/user-attachments/assets/47563961-58b0-4803-985b-dcda4441391d)
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Click the flag on the top right of the screen to promote the server to a Domain Controller.
 </p>
+<br />
+
+![image](https://github.com/user-attachments/assets/0a7236e7-b809-403d-aa64-d5a034a05ab7)
+
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+To create a domain admin user, first, create a new employee inside the "admins" organizational unit then add them to the "domain admins' security group.
+</p>
+<br />
+
+![image](https://github.com/user-attachments/assets/690252eb-8ba8-4aa7-ae6f-a58c672f6f0e)
+
+<p>
+On the "client" virtual machine, you will join it to the domain.
 </p>
 <br />
