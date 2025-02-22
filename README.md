@@ -63,3 +63,19 @@ To create a domain admin user, first, create a new employee inside the "admins" 
 On the "client" virtual machine, you will join it to the domain.
 </p>
 <br />
+
+![image](https://github.com/user-attachments/assets/1d1cc49f-bfd6-448f-854a-53574d20ea3f)
+
+
+<p>
+As an admin on the client machine, allow domain users access to remote desktop.
+</p>
+<br />
+
+![image](https://github.com/user-attachments/assets/c892132b-7f19-4893-aa7b-f41d759a358c)
+
+
+<p>
+To test, sign into client machine with user information.
+</p>
+<br />
