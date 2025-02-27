@@ -31,7 +31,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 ![image](https://github.com/user-attachments/assets/40c76f82-16cf-460f-b2e0-af950e8f0580)
 
 <p>
-Launch 2 virtual machines, one working as a Domain Controller and DNS while the other virtual machine as a Client. Both should be in the same virtual network and resource group.
+Launch a virtual machine in Windows Server 2022 which will serve as a Data Center and DNS. Launch another virtual machine in Windows 10 which will serve as a client machine. Both should be in the same virtual network and resource group.
 </p>
 <br />
 
@@ -45,7 +45,7 @@ Install Active Directory Domain Services on the virtual machine that'll be used 
 ![image](https://github.com/user-attachments/assets/47563961-58b0-4803-985b-dcda4441391d)
 
 <p>
-Click the flag on the top right of the screen to promote the server to a Domain Controller.
+Click the flag on the top right of the screen and follow the install steps to promote the server to a Domain Controller.
 </p>
 <br />
 
@@ -60,7 +60,7 @@ To create a domain admin user, first, create a new employee inside the "admins" 
 ![image](https://github.com/user-attachments/assets/690252eb-8ba8-4aa7-ae6f-a58c672f6f0e)
 
 <p>
-On the "client" virtual machine, you will join it to the domain.
+On the "client" virtual machine, you will join it to the domain by clicking the Windows icon on the bottom left. Go to "System", then "Rename this PC", then the "Change" button.
 </p>
 <br />
 
