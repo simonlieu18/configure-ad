@@ -31,7 +31,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 ![image](https://github.com/user-attachments/assets/40c76f82-16cf-460f-b2e0-af950e8f0580)
 
 <p>
-Launch a virtual machine in Windows Server 2022 which will serve as a Data Center and DNS. Launch another virtual machine in Windows 10 which will serve as a client machine. Both should be in the same virtual network and resource group.
+Launch a virtual machine in Windows Server 2022 which will serve as a Data Center. Launch another virtual machine in Windows 10 which will serve as a client machine. Both should be in the same virtual network and resource group.
 </p>
 <br />
 
@@ -42,7 +42,9 @@ Install Active Directory Domain Services on the virtual machine that'll be used 
 </p>
 <br />
 
-![image](https://github.com/user-attachments/assets/47563961-58b0-4803-985b-dcda4441391d)
+![image](https://github.com/user-attachments/assets/b039f74a-8d31-4e62-afd2-75e38fc2c692)
+
+
 
 <p>
 Click the flag on the top right of the screen and follow the install steps to promote the server to a Domain Controller.
