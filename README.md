@@ -28,12 +28,6 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Deployment and Configuration Steps</h2>
 
-![image](https://github.com/user-attachments/assets/40c76f82-16cf-460f-b2e0-af950e8f0580)
-
-<p>
-Launch a virtual machine in Windows Server 2022 which will serve as a Data Center. Launch another virtual machine in Windows 10 which will serve as a client machine. Both should be in the same virtual network and resource group.
-</p>
-<br />
 
 ![image](https://github.com/user-attachments/assets/a3ffed1b-f6c7-4e7a-ad04-3fd485c89127)
 
@@ -51,11 +45,20 @@ Click the flag on the top right of the screen and follow the install steps to pr
 </p>
 <br />
 
-![image](https://github.com/user-attachments/assets/0a7236e7-b809-403d-aa64-d5a034a05ab7)
+![image](https://github.com/user-attachments/assets/0a63058d-bc87-427e-8f52-d5075159a8dc)
 
 
 <p>
-To create a domain admin user, first, create a new employee inside the "admins" organizational unit then add them to the "domain admins' security group.
+Open "Active Directory Users and Computers" application and create two new organizational units, "EMPLOYEES" and "ADMINS", under your domain.
+</p>
+<br />
+
+
+![image](https://github.com/user-attachments/assets/59cd5e35-9077-499e-a53b-9d60164d178a)
+
+
+<p>
+Add a new user in the "ADMINS" organizational unit, then add them to the "Domain Admins" security group. Proceed to disconnect from the Data Center and login as the newly created admin user.
 </p>
 <br />
 
@@ -63,6 +66,15 @@ To create a domain admin user, first, create a new employee inside the "admins" 
 
 <p>
 On the "client" virtual machine, you will join it to the domain by clicking the Windows icon on the bottom left. Go to "System", then "Rename this PC", then the "Change" button.
+</p>
+<br />
+
+
+![image](https://github.com/user-attachments/assets/e24847a8-3cbe-4a04-936b-ac5eff1cea82)
+
+
+<p>
+Back on the Data Center machine, confirm that the new client machine is linked by opening "Active Directory Users and Computers" and navigate to the domain and open up the "Computers" organizational unit. After that make a new organizational unit called "CLIENTS" and drag that client machine into the new "CLIENTS" organizational unit.
 </p>
 <br />
 
