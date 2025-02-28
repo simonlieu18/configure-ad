@@ -78,7 +78,15 @@ Back on the Data Center machine, confirm that the new client machine is linked b
 </p>
 <br />
 
-![image](https://github.com/user-attachments/assets/1d1cc49f-bfd6-448f-854a-53574d20ea3f)
+![image](https://github.com/user-attachments/assets/d6ab3433-0a20-4369-952f-0ea1e4fc6855)
+
+<p>
+Create some users in the "EMPLOYEES" organizational unit.
+</p>
+<br />
+
+
+![image](https://github.com/user-attachments/assets/56b534a0-3db5-4e73-a731-f38a4eec8577)
 
 
 <p>
@@ -86,10 +94,10 @@ As an admin on the client machine, allow domain users access to remote desktop.
 </p>
 <br />
 
-![image](https://github.com/user-attachments/assets/c892132b-7f19-4893-aa7b-f41d759a358c)
+![image](https://github.com/user-attachments/assets/1033c11b-0eb9-444a-ac19-86deee71e001)
 
 
 <p>
-To test, sign into client machine with user information.
+To test the newly created users, remote desktop into the client machine with a new user's login information.
 </p>
 <br />
